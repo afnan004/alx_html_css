@@ -5,3 +5,6 @@ body {
     background: #f4f4f4;
     color: #333;
   }
+  .works_on_smartphone main {
+    flex-direction: column;
+  }
