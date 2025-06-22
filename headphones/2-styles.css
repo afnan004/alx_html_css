@@ -1,0 +1,31 @@
+.our-results {
+    padding: 60px 0;
+  }
+  
+  .our-results h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .results {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+  }
+  
+  .result-item {
+    text-align: center;
+  }
+  
+  .pentagon {
+    width: 80px;
+    height: 80px;
+    background-color: #FF6565;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 75% 100%, 25% 100%, 0% 25%);
+    margin-bottom: 10px;
+  }
+  

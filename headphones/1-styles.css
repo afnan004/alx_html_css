@@ -1,0 +1,25 @@
+.what-we-do {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+  
+  .what-we-do h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+  }
+  
+  .service-item {
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  

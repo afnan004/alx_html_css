@@ -1,0 +1,38 @@
+.contact-us {
+    padding: 60px 0;
+  }
+  
+  .contact-us h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #FF6565;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  form button:hover {
+    opacity: 0.9;
+  }
+  

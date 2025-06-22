@@ -1,0 +1,61 @@
+/* Basic Styling */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .site-header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  /* Mobile View (Hamburger Menu) */
+  @media screen and (max-width: 480px) {
+    .nav-links {
+      display: none;
+    }
+    
+    .hamburger-menu {
+      display: block;
+    }
+    
+    .nav-links.active {
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+    }
+    
+    .nav-links a {
+      margin: 10px 0;
+    }
+  }
+  

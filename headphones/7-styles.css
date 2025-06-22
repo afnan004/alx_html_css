@@ -1,0 +1,134 @@
+/* Base styles */
+:root {
+    --main-color: #FF6565;
+    --max-width: 1000px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* "What We Do" Section */
+  .what-we-do {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+  
+  .what-we-do h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+  }
+  
+  .service-item {
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .service-item:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .service-item:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .service-item:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .service-item:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* "Our Results" Section */
+  .our-results {
+    padding: 60px 0;
+  }
+  
+  .our-results h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .results {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+  }
+  
+  .result-item {
+    text-align: center;
+    animation: scaleUp 1s ease-out forwards;
+  }
+  
+  .result-item:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .result-item:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .result-item:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  
+  .pentagon {
+    width: 80px;
+    height: 80px;
+    background-color: #FF6565;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 75% 100%, 25% 100%, 0% 25%);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pentagon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
